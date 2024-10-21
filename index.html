@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fas-->
+    <script src="https://kit.fontawesome.com/f99ae708c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Company Web</title>
+    <script src="script.js"></script>
+</head>
+<body id="home">
+    <!--navbar-->
+    <header>
+    <nav id="navbar">
+        <h1>
+            <span class="text-primary"><i class="fas fa-book-open"></i> FIR</span> MA
+        </h1>
+        <ul>
+            <li><a href="#home">Avaleht</a></li>
+            <li><a href="#what">Teenused</a></li>
+            <li><a href="#who">Meeskond</a></li>
+            <li><a href="#clients">Kliendid</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!--header - showcase-->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h2 class="l-heading">Lihtsalt Tee Midagi</h2>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veritatis omnis hic molestias exercitationem suscipit.</p>
+            <a href="#what" class="btn btn-primary">Loe rohkem</a>
+        </div>
+    </header>
+
+    <!--#what-->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">Mida me <span class="text-primary">pakume</span></h2>
+            <div class="items">
+                <div class="item text-center p-1">
+                    <i class="fab fa-codepen fa-2x p-1"></i>
+                    <div>
+                        <h3>Kirjutame</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ullam in nobis veritatis porro tempora.</p>
+                    </div>
+                </div>
+                <div class="item text-center p-1">
+                    <i class="fas fa-pencil-alt fa-2x p-1"></i>
+                    <div>
+                        <h3>Kujundame</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni at enim rem tempora alias pariatur.</p>
+                    </div>
+                </div>
+                <div class="item text-center p-1">
+                    <i class="fas fa-bug fa-2x p-1"></i>
+                    <div>
+                        <h3>Silume</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quos, aspernatur odio rerum reiciendis distinctio.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--#who-->
+    <section id="who">
+        <!--img-->
+        <div class="who-img"></div>
+        <!--text content-->
+        <div class="bg-dark p-1">
+            <h2 class="m-heading">Kes <span class="text-primary">me</span> oleme</h2>
+            <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis explicabo neque nam ea officia esse.</p>
+            <h3>Meie meeskond</h3>
+            <ul>
+                <li>Kaval Ant: Projektijuht</li>
+                <li>Puna Mütsike: Arendusjuht</li>
+                <li>Lumi Valguke: Konsultant</li>
+                <li>Jõulu Vana: Arendaja</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--#clients-->
+    <section id="clients">
+        <div class="bg-light py-1">
+            <h2 class="m-heading text-center">Meie <span class="text-primary">kliendid</span></h2>
+            <div class="py-1 items">
+                <div><img src="./img/logo1.png" alt="Klient1"></div>
+                <div><img src="./img/logo2.png" alt="Klient2"></div>
+                <div><img src="./img/logo3.png" alt="Klient3"></div>
+                <div><img src="./img/logo4.png" alt="Klient4"></div>
+                <div><img src="./img/logo5.png" alt="Klient5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--#contact-->
+    <section id="contact">
+        <!--form-->
+        <div class="p-1 bg-primary contact-form">
+            <h2 class="m-heading">Võta meiega ühendust</h2>
+            <p>Täida all olev vorm</p>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Nimi</label>
+                    <input type="text" id="name" placeholder="Sisesta oma nimi" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Sisesta oma email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" placeholder="Sisesta oma telefoni number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Sõnum</label>
+                    <textarea id="message" placeholder="Sisesta oma sõnum" required></textarea>
+                </div>
+                <input type="submit" value="Saada" class="btn btn-dark">
+            </form>
+        </div>
+
+     <!--map-->
+     <div id="map" class="contact-map"></div>
+    </section>
+
+    <!--#footer-->
+    <footer id="footer" class="bg-dark text-center py-1">
+        <p>Kõik õigused on kaitstud &copy;2021</p>
+    </footer>
+
+    <!--Google maps script-->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgA55APPdvlfGCiWl55jQ40rakd_4Pku8&callback=initMap"></script>
+</body>
+</html>
